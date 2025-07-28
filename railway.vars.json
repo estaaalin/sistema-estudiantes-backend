@@ -1,0 +1,4 @@
+{
+  "SPRING_PROFILES_ACTIVE": "prod",
+  "JWT_SECRET": "mySecretKey123456789abcdefghijklmnopqrstuvwxyz"
+}
