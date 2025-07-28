@@ -1,5 +1,5 @@
 # Etapa de build
-FROM maven:3.9.0-openjdk-17 AS build
+FROM maven:3.9.4-eclipse-temurin-17 AS build
 
 # Establecer directorio de trabajo
 WORKDIR /app
@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa de ejecución
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre-jammy
 
 # Establecer directorio de trabajo
 WORKDIR /app
